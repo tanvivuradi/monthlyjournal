@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            padding: 12px 16px;
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Journal</h1>
+        <nav>
+            <div class="dropdown">
+                <button>Month Menu</button>
+                <div class="dropdown-content">
+                    <a href="#january">January</a>
+                    <a href="#february">February</a>
+                    <!-- Add more months as needed -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="january">
+        <h2>January</h2>
+        <p><strong>Date:</strong> January 1, 2025</p>
+        <p>Went for a morning walk and started reading a new book.</p>
+        <p><strong>Date:</strong> January 2, 2025</p>
+        <p>Continued reading, cooked chicken soup, and felt productive.</p>
+    </section>
+
+    <section id="february">
+        <h2>February</h2>
+        <p><strong>Date:</strong> February 1, 2025</p>
+        <p>Reflecting on goals and plans for the month.</p>
+    </section>
+</body>
+</html>
